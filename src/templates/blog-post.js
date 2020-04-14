@@ -18,7 +18,7 @@ const BlogPost = ({ data }) => {
       
         <S.PostHeader>
             <S.PostDate>
-            {post.frontmatter.date} • {post.timeToRead} min de leitura
+            {post.frontmatter.date} • {post.timeToRead + 1} min de leitura
             </S.PostDate>
             <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
             <S.PostDescription>{post.frontmatter.description}</S.PostDescription>

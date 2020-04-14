@@ -1,10 +1,16 @@
 import styled from 'styled-components';
-
+import media from "styled-media-query";
 export const Container = styled.div`
+
 `;
 export const Main = styled.div`
   margin-left: 6vw;
   padding: 0 2rem;
+
+  ${media.lessThan("large")`
+    padding: 0;
+    margin-left: 0;
+  `}
 `; 
 
 export const PostHeader = styled.header`
@@ -12,6 +18,12 @@ export const PostHeader = styled.header`
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
+  ${media.lessThan("large")`
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 30px;
+  `}
 `
 
 export const PostTitle = styled.h1`
@@ -19,6 +31,11 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
+
+  ${media.lessThan("large")`
+    margin: 0 auto;
+  `}
+
 `
 
 export const PostDescription = styled.h2`
@@ -37,6 +54,9 @@ export const MainContent = styled.section`
   margin: auto;
   max-width: 70rem;
   padding: 2rem 5rem;
+  ${media.lessThan("large")`
+    padding:0.5rem 2rem;
+  `}
   p,
   h1,
   h2,
