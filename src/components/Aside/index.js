@@ -1,30 +1,31 @@
 import React from 'react';
-import { FiAlignLeft, FiVideo, FiBook, FiSearch } from "react-icons/fi";
-import { AiFillAudio } from "react-icons/ai";
-
+// import { FiAlignLeft as Menu, FiVideo as Video, FiBook as Book, FiSearch as Search, FiMic as Mic } from "react-icons/fi";
+import {FiAlignLeft as Menu} from "react-icons/fi";
+import {FiVideo as Video} from "react-icons/fi";
+import { FiBook as Book} from "react-icons/fi";
+import { FiSearch as Search} from "react-icons/fi";
+import { FiMic as Mic} from "react-icons/fi";
 import { Container, MenuBarLink, MenuBarItem } from './styles';
 
 const Aside = () => (
     <Container>
-
         <MenuBarLink to="/" title="Voltar para home">
-            <MenuBarItem> <FiAlignLeft size={24} color="#fff" /> </MenuBarItem>
+            <MenuBarItem> <Menu size={24} color="#fff" /> </MenuBarItem>
         </MenuBarLink>
         
         <MenuBarLink to="/" title="Livros">
-            <MenuBarItem> <FiBook size={24} color="#fff" /> </MenuBarItem>
+            <MenuBarItem> <Book size={24} color="#fff" /> </MenuBarItem>
         </MenuBarLink>
-
         <MenuBarLink to="/video" title="Vídeos">
-            <MenuBarItem> <FiVideo size={24} color="#fff" /> </MenuBarItem>
+            <MenuBarItem> <Video size={24} color="#fff" /> </MenuBarItem>
         </MenuBarLink>
 
         <MenuBarLink to="/podcasts" title="Podcats">
-            <MenuBarItem> <AiFillAudio size={24} color="#fff" /> </MenuBarItem>
+            <MenuBarItem> <Mic size={24} color="#fff" /> </MenuBarItem>
         </MenuBarLink>
       
         <MenuBarLink to="/search" title="Pesquisar">
-            <MenuBarItem> <FiSearch size={24} color="#fff" /> </MenuBarItem>
+            <MenuBarItem> <Search size={24} color="#fff" /> </MenuBarItem>
         </MenuBarLink>
     </Container>
 )

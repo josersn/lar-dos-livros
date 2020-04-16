@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Wrapper } from "../styles/notfound";
 import SEO from "../components/seo"
 import Img from "../images/matter-404.svg"
-import Aside from "../components/aside";
+import Aside from "../components/Aside";
 import GlobalStyle from "../styles/global";
 
 const NotFoundPage = () => (

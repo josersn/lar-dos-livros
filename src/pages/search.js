@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import { Container, Wrapper } from "../styles/notfound";
 import SEO from "../components/seo"
 import Img from "../images/matter-working.svg"
