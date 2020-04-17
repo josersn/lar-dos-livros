@@ -4,7 +4,7 @@ import React from "react"
 import { Container, Wrapper } from "../styles/notfound";
 import SEO from "../components/seo"
 import Img from "../images/matter-working.svg"
-import Aside from "../components/aside";
+import Aside from "../components/Aside";
 import GlobalStyle from "../styles/global";
 
 
@@ -14,7 +14,7 @@ const SearchPage = () => (
   <SEO title="Página de busca"/>
   <Aside />
   <Wrapper>
-  <img src={Img} alt=""/>
+  <img src={Img} alt="Lar dos livros em construcão"/>
   <h1>Infelizmente está página está em construção.</h1>
   <h2>Nossa equipe está correndo. Caso precise de ajuda entre em contato com a equipe.</h2>
   </Wrapper>
