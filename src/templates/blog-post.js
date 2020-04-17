@@ -5,7 +5,7 @@ import { Container, Main } from "../components/blog-post/styled";
 import * as S from "../components/blog-post/styled"
 import Global from "../styles/global";
 import Aside from "../components/Aside";
-
+import Comment from "../components/Comments";
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark
 
@@ -27,6 +27,7 @@ const BlogPost = ({ data }) => {
             <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         </S.MainContent>
       </Main>
+      <Comment url={post.fields.slug} title={post.frontmatter.title}/>
     </Container>
   )
 }
@@ -34,6 +35,9 @@ const BlogPost = ({ data }) => {
 export const query = graphql`
   query Post($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")

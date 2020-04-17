@@ -41,8 +41,8 @@ const Main = () => {
         <First>
             <GroupPost>
                 <h1>Últimas Postagens</h1>
-                {allPost.map(({ node: {frontmatter: {title}, fields: {slug}}}, index) => (
-                    <Post title={title} key={index} slug={slug} />
+                {allPost.map(({ node: {frontmatter: {title, image}, fields: {slug}}}, index) => (
+                    <Post title={title} key={index} slug={slug} image={image}/>
     ))}
             </GroupPost>
         </First>

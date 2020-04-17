@@ -3,7 +3,7 @@ date: 2020-04-15 18:00:00
 title: Entrevista com Lia de Oliveira
 description: Entrevista com a escritora da plataforma do Wattpad.
 category: High
-image: "https://uploaddeimagens.com.br/images/002/582/691/original/matter.png?1586544998"
+image: /assets/image/lar-dos-livros-lia-de-oliveira.jpg
 background: "#50BFA0"
 ---
 

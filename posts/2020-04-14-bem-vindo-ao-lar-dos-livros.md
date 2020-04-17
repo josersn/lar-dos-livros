@@ -3,7 +3,7 @@ date: 2020-01-05 18:00:00
 title: Bem-Vindo ao Lar Dos Livros
 description: Seu site site de livros feito com amor  ❤️ 
 category: High
-image: "https://uploaddeimagens.com.br/images/002/582/691/original/matter.png?1586544998"
+image: /assets/image/lardoslivros.png
 background: "#50BFA0"
 ---
 
