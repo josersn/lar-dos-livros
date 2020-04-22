@@ -23,3 +23,4 @@ export const First = styled.div`
   ${media.lessThan("large")`width: 100%; margin : 0;`}
 
 `;
+

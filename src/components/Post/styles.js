@@ -35,10 +35,11 @@ export const Img = styled.div`
   justify-content: center;
 
   img {
-    width: 80%;
+    width: 98%;
     ${media.lessThan("large")`
-      width: 50%; 
+      width: 90%; 
   `}
+
   }
 `
 export const Content = styled.div`

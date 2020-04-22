@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 
-import { Container, GroupPost, First, Body } from './styles';
+import { Container, GroupPost, First, Body} from './styles';
 import Post from "../Post";
 import Panel from "../Painel";
 import Second from "../Second";
@@ -48,9 +48,9 @@ const Main = () => {
         </First>
 
         <Second>
-
         </Second>
         </Body>
+        
     </Container>
 )};
 export default Main;

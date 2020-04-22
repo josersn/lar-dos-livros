@@ -1,7 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
-import { Container, First, Second, Frame, Title} from './styles';
-const link = "https://uploaddeimagens.com.br/images/002/582/691/original/matter.png?1586544998";
+import { Container, First, Second, Frame, Title, Mobile} from './styles';
+
+ 
 const Panel = () => {
 
     const { allMarkdownRemark } = useStaticQuery(
@@ -23,20 +24,25 @@ const Panel = () => {
             }
           `
     );
-
-    const firstNode = allMarkdownRemark.edges.nodes;
-    console.log(firstNode);
+    
+    const firstNode = allMarkdownRemark.edges[0];
+    const rests = [allMarkdownRemark.edges[1], allMarkdownRemark.edges[2]];
     return(
     <Container>
-        <First to="/" data={link} >
-            <Title color={"#fff"}>Bem-vindo ao Lar Dos Livros</Title>
+        <Mobile>
+
+        </Mobile>
+        <First to={firstNode.node.fields.slug} data={firstNode.node.frontmatter.image} >
+            <Title color={"#fff"}>{firstNode.node.frontmatter.title}</Title>
         </First>
         <Second>
-            <Frame to="/" >
-            </Frame>
-            <Frame to="/" >
-            </Frame>
+            {rests.map(({node}, index) => (
+                <Frame key={index} to={node.fields.slug} data={node.frontmatter.image} >
+                </Frame>
+            ))}
+            
         </Second>
+        
 
     </Container>
 )}

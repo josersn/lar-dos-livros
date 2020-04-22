@@ -12,27 +12,30 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  
+  
+  
+`;
+export const Mobile = styled.div`
+  display:none;
+
   ${media.lessThan("large")`
-    height: 100vh;
+    display: flex;
   `}
-  
-  
 `;
 export const First = styled(Link)`
   width: calc(50% - 5px);
   height: 100%;
-  background: #50bfa0;
-  /* background-image: ${props => props.data ? renderImg(props.data) : "https://api.adorable.io/avatars/285/abott@adorable.png"}; */
+  background-image: ${props => props.data ? renderImg(props.data) : "https://api.adorable.io/avatars/285/abott@adorable.png"};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   transition: all 0.4s;
-
   ${media.lessThan("large")`
-    width: 100%;
-    height: calc(50vh - 5px);
+  display: none;
   `}
+
 
 
   &:hover{
@@ -49,18 +52,22 @@ export const Second = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
-
   ${media.lessThan("large")`
-    width: 100%;
-    height: calc(50vh - 5px);
+  display: none;
   `}
+
+
   `;
 export const Frame = styled(Link)`
   width: 100%;
   height: calc(50% - 5px);
-  background: #50bfa0;
+  /* background: #50bfa0; */
+  background-image: ${props => props.data ? renderImg(props.data) : "https://api.adorable.io/avatars/285/abott@adorable.png"};
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   transition: all 0.4s;
+  opacity: 0.5;
 
 
   &:hover{
