@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Panel  } from "./styles";
+import { Container } from "./styles";
 import Image from "../../images/lar-dos-livros-bookweek.jpg"
 
 

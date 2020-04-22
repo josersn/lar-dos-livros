@@ -38,6 +38,7 @@ const Panel = () => {
         <Second>
             {rests.map(({node}, index) => (
                 <Frame key={index} to={node.fields.slug} data={node.frontmatter.image} >
+                 
                 </Frame>
             ))}
             

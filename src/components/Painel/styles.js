@@ -67,7 +67,7 @@ export const Frame = styled(Link)`
   background-size: cover;
   background-position: top;
   transition: all 0.4s;
-  opacity: 0.5;
+  
 
 
   &:hover{
@@ -88,9 +88,12 @@ export const Title = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #cecece69;
+  background: #000;
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #000;
  
 `;
